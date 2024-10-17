@@ -1,0 +1,49 @@
+{
+  "name": "@tonsprotocol/telegram-cloudstorage-wallet",
+  "version": "0.0.1",
+  "description": "Telegram multichain wallet base on Telegram cloudstorage & HD multistand wallet",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "author": "tonsprotocol",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "@telegram-apps/sdk-react": "^2.0.6",
+    "@tonsprotocol/hdwallet": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/jest": "^28.1.8",
+    "@types/libsodium-wrappers-sumo": "^0.7.5",
+    "@types/sodium-native": "^2.3.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.9.3"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tonspay/Telegram-Webapp-CloudStorag-Multichain-Wallet-Solution"
+  },
+  "keywords": [
+    "telegram",
+    "crypto-wallet",
+    "evm",
+    "solana",
+    "ton",
+    "tonspack",
+    "wallet"
+  ],
+  "homepage": "https://github.com/Tonspay"
+}
