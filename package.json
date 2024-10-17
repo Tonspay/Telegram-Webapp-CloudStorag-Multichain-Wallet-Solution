@@ -1,6 +1,6 @@
 {
   "name": "@tonsprotocol/telegram-cloudstorage-wallet",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Telegram multichain wallet base on Telegram cloudstorage & HD multistand wallet",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

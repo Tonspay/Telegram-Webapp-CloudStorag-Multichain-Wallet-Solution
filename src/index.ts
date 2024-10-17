@@ -1,4 +1,4 @@
-import { cloudStorage  } from "@telegram-apps/sdk";
+import { cloudStorage } from "@telegram-apps/sdk-react";
 import { HDWallet } from "@tonsprotocol/hdwallet";
 
 
@@ -61,11 +61,11 @@ interface initObj {
   * - Storage the base information & KP into the 
   * 
   */
-export class CloudStorageWallet  {
+export default class CloudStorageWallet  {
   // New HDwallet auto generate wallets from a random keypair and return data
 
   static async init(path:string,data?:initObj) {
-    let value = await cloudStorage.getItem(path)
+    const value = await cloudStorage.getItem(path)
     // console.log("get storage",value);
     let pwd = "";
     let wallet_path = 1;

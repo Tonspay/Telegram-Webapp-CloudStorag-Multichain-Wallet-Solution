@@ -5,3 +5,18 @@ This repo is about the telegram wallet solution base on [Telegram cloudstorage](
 Support users to generate and storage the wallet information/interface via telegram cloudstorage .
 
 # How to use it ?
+
+Install the package
+
+```
+pnpm i @tonsprotocol/telegram-cloudstorage-wallet
+
+```
+
+Now try use it in your font-end 
+
+```
+import CloudStorageWallet from "@tonsprotocol/telegram-cloudstorage-wallet" 
+
+await CloudStorageWallet.init("mywallet")
+```
